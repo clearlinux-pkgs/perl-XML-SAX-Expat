@@ -4,13 +4,13 @@
 #
 Name     : perl-XML-SAX-Expat
 Version  : 0.51
-Release  : 10
-URL      : http://search.cpan.org/CPAN/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
-Source0  : http://search.cpan.org/CPAN/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
+Release  : 11
+URL      : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
 Summary  : SAX Driver for Expat
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
-Requires: perl-XML-SAX-Expat-doc
+Requires: perl-XML-SAX-Expat-man
 BuildRequires : perl(XML::NamespaceSupport)
 BuildRequires : perl(XML::Parser)
 BuildRequires : perl(XML::SAX)
@@ -21,12 +21,12 @@ XML::SAX::Expat
 ===============
 See `perldoc Expat.pm`.
 
-%package doc
-Summary: doc components for the perl-XML-SAX-Expat package.
-Group: Documentation
+%package man
+Summary: man components for the perl-XML-SAX-Expat package.
+Group: Default
 
-%description doc
-doc components for the perl-XML-SAX-Expat package.
+%description man
+man components for the perl-XML-SAX-Expat package.
 
 
 %prep
@@ -39,7 +39,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 else
 %{__perl} Build.PL
 ./Build
@@ -68,6 +68,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(-,root,root,-)
 /usr/lib/perl5/site_perl/5.26.1/XML/SAX/Expat.pm
 
-%files doc
+%files man
 %defattr(-,root,root,-)
-%doc /usr/share/man/man3/*
+/usr/share/man/man3/XML::SAX::Expat.3
