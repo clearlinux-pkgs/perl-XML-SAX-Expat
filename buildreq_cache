@@ -1,0 +1,5 @@
+0.51
+perl(XML::NamespaceSupport)
+perl(XML::Parser)
+perl(XML::SAX)
+perl(XML::SAX::Base)
