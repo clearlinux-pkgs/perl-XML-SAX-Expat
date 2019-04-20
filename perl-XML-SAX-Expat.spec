@@ -4,10 +4,10 @@
 #
 Name     : perl-XML-SAX-Expat
 Version  : 0.51
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
-Summary  : SAX Driver for Expat
+Summary  : SAX2 Driver for Expat (XML::Parser)
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
@@ -25,6 +25,7 @@ See `perldoc Expat.pm`.
 Summary: dev components for the perl-XML-SAX-Expat package.
 Group: Development
 Provides: perl-XML-SAX-Expat-devel = %{version}-%{release}
+Requires: perl-XML-SAX-Expat = %{version}-%{release}
 
 %description dev
 dev components for the perl-XML-SAX-Expat package.
