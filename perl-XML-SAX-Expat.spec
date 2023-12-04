@@ -5,7 +5,7 @@
 #
 Name     : perl-XML-SAX-Expat
 Version  : 0.51
-Release  : 37
+Release  : 38
 URL      : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-0.51.tar.gz
 Summary  : SAX Driver for Expat
